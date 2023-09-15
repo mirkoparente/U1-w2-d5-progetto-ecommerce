@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="U1_w2_d5_progetto_ecommerce.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav class="navbar navbar-expand-lg bg-dark ">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="Home.aspx">
+                            <img
+                                src="Content/img/crudazon__1_-removebg-preview%20(1).png"
+                                class="w-25"
+                                alt="" /></a>
+                        <button
+                            class="navbar-toggler bg-warning-subtle"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end align-items-center ">
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link text-white-50" href="Cart.aspx"><i class="bi bi-bag"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+        
+            
+            <footer class="bg-dark pb-2">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-center">
+                        <a href="Home.aspx" class="text-center">
+                            <img
+                                src="Content/img/crudazon__1_-removebg-preview%20(1).png"
+                                class="w-25"
+                                alt="" /></a>
+                    </div>
+                </div>
+                <p class="text-white-50 pb-3 text-center">
+                    &copy; <span id="data"></span>Crudazon.srl P.IVA 1123456789
+                </p>
+            </footer>
+           
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
